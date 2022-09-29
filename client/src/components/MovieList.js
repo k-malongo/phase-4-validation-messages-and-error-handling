@@ -10,8 +10,8 @@ function MovieList() {
   useEffect(() => {
     fetch("/movies")
       .then((r) => r.json())
-      .then((movies) => {
-        setMovies(movies);
+      .then((movie) => {
+        setMovies(movie)
       });
   }, []);
 
